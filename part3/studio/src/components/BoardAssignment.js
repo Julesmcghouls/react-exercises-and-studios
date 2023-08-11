@@ -17,9 +17,9 @@ export default function BoardAssignment () {
       <label>Save to Board: </label>
       <select value={boardName} onChange={handleChange}>
          {boards.map((board) => (
-            <option value={board.value}>{board.label}</option>
-         ))}
-      </select>
+         <option key={board.value} value={board.value}> {board.label} </option>
+  ))}
+</select>
 
       <p>Saved to {boardName}!</p>
       </div>
